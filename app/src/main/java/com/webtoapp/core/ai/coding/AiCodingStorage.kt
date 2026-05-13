@@ -948,7 +948,7 @@ object CodeBlockParser {
     )
 
 
-    private val JS_COMMENT_NEWLINE_REGEX = Regex("""(?<!:)(//[^\n]*?)(\s*)(const|let|var|function|if|else|for|while|switch|return|document|window|console|\$|\[|{)""")
+    private val JS_COMMENT_NEWLINE_REGEX = Regex("""(?<!:)(//[^\n]*?)(\s*)(const|let|var|function|if|else|for|while|switch|return|document|window|console|\$|\[|\{)""")
     private val CALLBACK_END_REGEX = Regex("""\}\);(\s*)(?!\s*\n)(?=\S)""")
     private val BLOCK_END_SEMICOLON_REGEX = Regex("""\};(\s*)(?!\s*\n)(?=\S)""")
     private val BRACE_CLOSE_REGEX = Regex("""\}(\s*)(?!\s*[\n;,)\]])(?=\s*(?:const|let|var|function|if|else|for|while|switch|return|document|window|console|//|\$))""")
